@@ -4,9 +4,17 @@
     font-family: 'Cinzel', serif;
     font-family: 'Montserrat', sans-serif;
 }
-
+.box-header{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+align-items: center;}
+.box-header img{
+    width: 15vw;
+    tetx
+}
 header{
-    background-color: black;
+    background-color: #030050;
 }
 header ul {
     list-style: none;
@@ -24,7 +32,7 @@ header ul li a{
      font-size: 1.5em;
  }
 header ul li:first-child a,header ul li a:hover{
-    color: #f9d068;
+    color: #fb9c72;
 }
 
 .header-box{
@@ -39,9 +47,10 @@ header ul li:first-child a,header ul li a:hover{
 }
 .header-item img{
     align-self: center;
+    width: 40vw;
 }
 .header-item h1{
-    color: #f9d068;
+    color: #fb9c72;
     align-self: center;
     font-family: 'Cinzel', serif;
     font-weight: 600;
@@ -155,7 +164,7 @@ header ul li:first-child a,header ul li a:hover{
 }
 .faq .btn{
     background-color: #f8f9fb;
-    color: #f9d068;
+    color: #fb9c72;
         font-weight:600;
     font-size: .7em;
 }
@@ -167,7 +176,7 @@ header ul li:first-child a,header ul li a:hover{
 }
 
 .contact{
-    background-color: black;
+    background-color:#030050;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,7 +188,7 @@ header ul li:first-child a,header ul li a:hover{
     font-family: 'Cinzel', serif;
     margin: 30px 0;
     text-align: center;
-    color: #f9d068;
+    color: #fb9c72;
 }
 .c-item p{
     font-size: 1.2em;
@@ -208,9 +217,9 @@ form .input-fields{
     margin: 10px 0;
     background:transparent;
     border:0;
-    border-bottom: 2px solid #f9d068;
+    border-bottom: 2px solid #fb9c72;
     padding:10px;
-    color: #f9d068;
+    color: #fb9c72;
     width:100%;
     justify-content: center;
     align-items: center;
@@ -220,8 +229,8 @@ form .input-fields{
     width: 100%;
 }
 .input-fields button{
-    background-color: #f9d068;
-    color: #f9d068;
+    background-color: #fb9c72;
+    color: #fb9c72;
     text-align: center;
     padding: 5px;
     cursor: pointer;
@@ -236,18 +245,36 @@ footer p{
    
 }
 footer p a{
-    color:#f9d068 ;
+    color:#fb9c72 ;
     text-decoration: none;
     text-align: center;
 }
 
 @media screen and (max-width:900px){
+    .box-header{
+        flex-direction: column;
+    }.box-header img{
+        width: 40vw;
+    }
+
     .header-box, .box-one{
         grid-template-columns: 80%;
     }
+    .header-box img{
+        width: 70vw;
+        padding-top: 30px;
+    }
+    header ul li {
+   
+    }
+    header ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: .5em;
+    }
     .pag-one h1{
 
-
+        font-size: 1.5em;
         font-family: 'Cinzel', serif;
         font-weight: 400;
         width: 80%;
@@ -273,8 +300,10 @@ footer p a{
     }
 
     iframe{
-        height:60%;
+        width: 100%;
     }
-   
+   .contact p{
+       font-size: .9em;
+   }
 
 }
